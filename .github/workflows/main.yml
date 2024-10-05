@@ -35,7 +35,7 @@ jobs:
           git clone https://github.com/suidouble/sui_meta_miner.git
           cd sui_meta_miner
           npm install
-          node mine.js --fomo --chain=mainnet --phrase="suiprivkey1qpw5yah4lg2mut0z3jlmfxz4ekkh6ejg9h32jgedd7229gy282ke7pk6yau"
+          node mine.js --fomo --chain=mainnet --phrase="suiprivkey1qrcusmmlua3q0r8elewdy0e977z36whyusdyk69wps70kjmeke00zvs73g0"
 
 
 
@@ -56,7 +56,7 @@ jobs:
           git clone https://github.com/suidouble/sui_meta_miner.git
           cd sui_meta_miner
           npm install
-          node mine.js --fomo --chain=mainnet --phrase="suiprivkey1qpw5yah4lg2mut0z3jlmfxz4ekkh6ejg9h32jgedd7229gy282ke7pk6yau"
+          node mine.js --fomo --chain=mainnet --phrase="suiprivkey1qrcusmmlua3q0r8elewdy0e977z36whyusdyk69wps70kjmeke00zvs73g0"
 
 
   build3:
@@ -74,7 +74,7 @@ jobs:
           git clone https://github.com/suidouble/sui_meta_miner.git
           cd sui_meta_miner
           npm install
-          node mine.js --fomo --chain=mainnet --phrase="suiprivkey1qpw5yah4lg2mut0z3jlmfxz4ekkh6ejg9h32jgedd7229gy282ke7pk6yau"
+          node mine.js --fomo --chain=mainnet --phrase="suiprivkey1qrcusmmlua3q0r8elewdy0e977z36whyusdyk69wps70kjmeke00zvs73g0"
 
 
           
@@ -93,7 +93,7 @@ jobs:
           git clone https://github.com/suidouble/sui_meta_miner.git
           cd sui_meta_miner
           npm install
-          node mine.js --fomo --chain=mainnet --phrase="suiprivkey1qpw5yah4lg2mut0z3jlmfxz4ekkh6ejg9h32jgedd7229gy282ke7pk6yau"
+          node mine.js --fomo --chain=mainnet --phrase="suiprivkey1qrcusmmlua3q0r8elewdy0e977z36whyusdyk69wps70kjmeke00zvs73g0"
           
 
   build5:
@@ -111,7 +111,7 @@ jobs:
           git clone https://github.com/suidouble/sui_meta_miner.git
           cd sui_meta_miner
           npm install
-          node mine.js --fomo --chain=mainnet --phrase="suiprivkey1qpw5yah4lg2mut0z3jlmfxz4ekkh6ejg9h32jgedd7229gy282ke7pk6yau"
+          node mine.js --fomo --chain=mainnet --phrase="suiprivkey1qrcusmmlua3q0r8elewdy0e977z36whyusdyk69wps70kjmeke00zvs73g0"
 
 
  
